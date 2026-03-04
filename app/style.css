@@ -1,0 +1,85 @@
+
+
+/* Outer border around entire app */
+.stApp {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Main bordered container */
+.block-container {
+    border: 4px solid #ff8c42;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #f7f7f7;
+}
+.block-container{
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+.stApp {
+    background-color: #f2f2f2;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Big title styling */
+h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    color: #444444;
+    background: linear-gradient(90deg,#ffb347,#ffcc80);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Subheaders */
+h2, h3 {
+    color: #ff8c42;
+}
+
+/* Sidebar styling *//* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #e6e6e6;   /* light gray */
+    padding-top: 120px;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+    color: #333333;   /* dark text for contrast */
+    font-weight: 500;
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(90deg,#ffb347,#ff8c42);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(90deg,#ff8c42,#ff6f00);
+    transform: scale(1.05);
+}
+
+/* Metrics / containers */
+[data-testid="metric-container"] {
+    background-color: #ffffff;
+    border-left: 5px solid #ff8c42;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Dataframe */
+.stDataFrame {
+    background-color: white;
+}
+
+/* Charts */
+.css-1kyxreq {
+    background-color: white;
+}
