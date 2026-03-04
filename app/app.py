@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
-
+import warnings
+warnings.filterwarnings("ignore")
 
 st.title('🚆 Smart Railway Resource Planning Dashboard')
 
-df = pd.read_csv("../data/railway_data.csv")
+df = pd.read_csv("data/railway_data.csv")
 
 st.subheader("Dataset Preview")
 st.dataframe(df.head())
@@ -14,7 +15,7 @@ st.dataframe(df.head())
 st.subheader("Passenger Distribution")
 st.bar_chart(df["passenger_count"])
 
-model = joblib.load("../models/delay_model.pkl")
+model = joblib.load("models/delay_model.pkl")
 
 st.sidebar.header("Train Inputs")
 
